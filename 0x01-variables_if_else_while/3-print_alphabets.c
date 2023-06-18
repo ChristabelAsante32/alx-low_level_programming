@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-	int ch = 'letter'
+	int ch = 'l';
 		while (ch <= 'Z')
 		{
 			putchar(ch);
