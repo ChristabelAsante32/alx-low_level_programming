@@ -7,11 +7,17 @@
 int main(void)
 {
 	int ch = 'l';
-		while (ch <= 'Z')
+	int n  = 'L';
+		while (ch <= 'a')
 		{
 			putchar(ch);
 			ch++;
 		}
+	while (n <= 'A')
+	{
+		putchar(n);
+		n++;
+	}
 	putchar('\n');
 	return (0);
 }
