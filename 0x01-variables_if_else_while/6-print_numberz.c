@@ -1,8 +1,9 @@
 #include <stdio.h>
-#include <stdlib.h>
+
 /**
 *main - Entry point
-*Return: Always 0 (success)
+*This function prints numbers
+*Return: 0 on success
 */
 
 int main(void)
@@ -11,9 +12,9 @@ int main(void)
 
 	while (i < 10)
 	{
-		printf("%d", i);
+		putchar(i + 48);
 		i++;
 	}
-	printf("\n");
+	putchar('\n');
 	return (0);
 }
