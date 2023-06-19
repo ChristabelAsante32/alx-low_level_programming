@@ -6,18 +6,14 @@
  */
 int main(void)
 {
-	int ch = 'l';
-	int n  = 'L';
-		while (ch <= 'a')
+	int ch = 'a';
+
+		while (ch <= 'z')
 		{
+			if (ch != 'q' && ch != 'e')
 			putchar(ch);
 			ch++;
 		}
-	while (n <= 'A')
-	{
-		putchar(n);
-		n++;
-	}
 	putchar('\n');
 	return (0);
 }
