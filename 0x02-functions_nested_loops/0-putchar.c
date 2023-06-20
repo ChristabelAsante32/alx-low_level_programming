@@ -1,11 +1,19 @@
 #include <stdio.h>
-#include <main.h>
+
 /**
  * main - Entry point
- * Return: Always 0 success
+ *
+ * Return: 0 on successful execution
  */
 int main(void)
 {
-	printf("_putchar");
+	int i;
+	char ch[] = "_putchar\n";
+
+	for (i = 0; ch[i] != '\0'; i++)
+	{
+		putchar(text[i]);
+	}
+
 	return (0);
 }
