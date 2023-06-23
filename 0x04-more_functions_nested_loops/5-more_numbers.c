@@ -8,11 +8,11 @@ void more_numbers(void)
 {
 	int c, p;
 
-	for (p = 0; p <= 10; p++)
+	for (p = 0; p < 10; p++)
 	{
 		for (c = 0; c <= 14; c++)
 		{
-			if (c >= 10)
+			if (c < 10)
 				_putchar(c / 10 + '0');
 			_putchar(c % 10 + '0');
 		}
