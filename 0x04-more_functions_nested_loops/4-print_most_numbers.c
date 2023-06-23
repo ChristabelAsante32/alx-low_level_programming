@@ -2,13 +2,14 @@
 #include <stdio.h>
 /**
  * print_most_numbers - prints most numbers
+ * takes no parameters
  * Return: no return
  */
 void print_most_numbers(void)
 {
 	int c;
 
-	for (c = 0; c <= 9;)
+	for (c = 0; c <= 9; c++)
 		if (c != 2 && c != 4)
 		{
 			_putchar(c + '0');
