@@ -9,20 +9,13 @@
  */
 char *_strcat(char *dest, char *src)
 {
-	strcat(dest, src);
-	printf("strcat (dest, src): %s\n", dest);
-	return (dest);
-}
-/**
- * main - Entry point
- * This function demonstrates the usage of _strcat to concanates strings
- * Return: 0
- */
-int main(void)
-{
-	char str1[20] = "Hello";
-	char str2[] = "World";
+	int index = 0, dest_len = 0;
 
-	_strcat(str1, str2);
-	return (0);
+	while (dest[index++])
+		dest_len++;
+
+	for (index = 0; src[index]; index++)
+		dest[dest_len++] = src[index];
+
+	return (dest);
 }
